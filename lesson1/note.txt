@@ -1,0 +1,12 @@
+- Khởi tạo dự án
+- Câu lệnh
+- npm -> package.json
+- Nội dung chính về kiến thức:
+    + Kiến thức về module:  hiểu về cách sử dụng module, cách dùng
+                            Xác định được kiểu module trong nodejs
+    + Kiến thức về Client-Server (HTTP)
+    + ExpressJs
+- Cách làm việc với HTTP:
+    + Các phương thức sử dụng HTTP
+    + GET
+
