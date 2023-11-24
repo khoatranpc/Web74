@@ -1,0 +1,25 @@
+Tạo thêm một data tên là authors
+Cấu trúc của phần tử author: {
+    id,
+    name
+}
+VD: 
+{
+    id:1,
+    name: 'Khoa'
+}
+
+{
+    id:1,
+    todoName: 'Làm việc',
+    author: 1
+}
+viêt API CRUD authors: get, post, put, delete
+thực hiện cập nhật API tạo todo:
+    + todoName là bắt buộc
+    + author là bắt buộc, và author là id của 1 phần tử trong authors
+Với API cập nhật todo nào đó, chỉ author của todo đó mới được phép cập nhật
+-> thực hiện viết API lấy danh sách todo của một author
+VD: /authors/:id/todos/:todoId
+-> Viết API lấy 1 todo của 1 author
+-> Dùng PUT với api trên
