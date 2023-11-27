@@ -32,11 +32,10 @@ const todoListController = {
     },
     updateTodo: (req, res) => {
         const { id } = req.params;
-        const { todoName, author } = req.body;
+        const { todoName } = req.body;
         const currentTodo = todoList.find(item => String(item.id) === id);
         if (currentTodo) {
             if (typeof todoName !== 'undefined') currentTodo['todoName'] = todoName;
-            if (typeof author !== 'undefined') currentTodo['author'] = author;
             res.send({
                 message: 'Cập nhật thành công!',
                 data: currentTodo
@@ -49,12 +48,18 @@ const todoListController = {
         }
     },
     createTodo: (req, res) => {
-        const payload = req.body;
-        todoList.push(payload);
+        const { todoName } = req.body;
+        const { apiKey } = req.query;
+        const newTodo = {
+            id: todoList.length,
+            todoName,
+            author: apiKey
+        }
+        todoList.push(newTodo);
         res.send({
             message: 'Thêm mới thành công!',
             data: todoList
-        })
+        });
     }
 }
 export default todoListController;

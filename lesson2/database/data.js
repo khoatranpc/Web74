@@ -1,14 +1,30 @@
 const todoList = [
     {
-        id: 1,
+        id: 0,
         todoName: 'Quét nhà, nấu cơm',
-        author: 'MAMA'
-    }, {
-        id: 2,
+        author: 1
+    },
+    {
+        id: 1,
         todoName: 'Sửa xe máy',
-        author: 'DADDY'
+        author: 2
+    }
+];
+const authors = [
+    {
+        id: 1,
+        name: 'Nobita'
+    },
+    {
+        id: 2,
+        name: 'Doraemon'
+    },
+    {
+        id: 3,
+        name: 'Jaien'
     }
 ];
 export {
-    todoList
+    todoList,
+    authors
 }
