@@ -1,0 +1,30 @@
+- Đăng ký
+ + Viết API cho phép người dùng đăng ký với email và password
+  điều kiện: email không được trùng, password lớn hơn 6 ký tự
+
+- Đăng nhập
+ + Viết API đăng nhập, trả về token -> id
+
+accounts {
+    email,
+    password,
+    verifyOtp
+}
+====
+users {
+    accountId,
+    fullName,
+    age,
+    address,
+    statusPublic: Public, Private,
+    activate: true | false
+}
+- Thông tin người dùng:
+ + viết API lấy thông tin
+ + Viết API cập nhật thông tin
+
+
+-> Khi người dùng tạo tài khoản và sử dụng để đăng nhập
+cần phải kiểm tra thông tin cá nhân đã cập nhật hay chưa
+Nếu chưa (activate: false) -> trả về message: Bạn cần cập nhật thông tin để kích hoạt tài khoản 
+                            -> API cập nhật thông tin users

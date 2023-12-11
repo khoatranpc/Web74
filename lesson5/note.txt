@@ -1,0 +1,21 @@
+Tác giả,
+Sách
+
+1 tác giả -> nhiều Sách
+Một cuốn sách -> 1 tác giả
+
+Tác giả
+{
+    id,
+    name,
+    age,
+    address
+}
+Cuốn sách
+{
+    id
+    name,
+    ds,
+    type,
+    authorId
+}
